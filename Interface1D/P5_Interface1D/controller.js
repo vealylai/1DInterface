@@ -63,7 +63,6 @@ class Controller {
                 // then grab every pixel of frame and put it into the display buffer
                 for(let i = 0; i < collisionAnimation.pixels; i++) {
                     display.setPixel(i,collisionAnimation.animation[frameToShow][i]);
-                    //print(frameToShow);
                     
                 }
 
@@ -132,7 +131,5 @@ function keyPressed() {
     
       if (key == 'R' || key == 'r') {
         controller.gameState = "PLAY";
-        
       }
-
   }

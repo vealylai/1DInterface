@@ -46,7 +46,7 @@ function setup() {
 }
 
 function draw() {
-  background(125, 125, 125);
+  background(0, 0, 0);
 
   controller.update();
   display.show();
