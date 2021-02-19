@@ -1,3 +1,6 @@
+// This is used to aggregrate visual information from all objects before we display them. 
+// First we populate display and then we show it to user.
+// This is particularly helpful once you start outputting your game to an LED strip, of if you want to have two separate 'screens'
 
 
 class Display {
@@ -6,9 +9,10 @@ class Display {
   
       this.displaySize = _displaySize;
       this.pixelSize = _pixelSize;
-      this.initColor = color(0, 0, 0);      // start empty
+      this.initColor = color(0, 0, 0);      // black color
       this.displayBuffer = [];
 
+      // Assign black to all pixels. Black = off
       for(let i = 0; i < this.displaySize; i++){
         this.displayBuffer[i] = this.initColor;
       }
@@ -31,6 +35,7 @@ class Display {
 
 
     // Now write it to screen
+    // This is the only function in the entire software that writes something directly to the screen.
     show() {
       for (let i =0; i< this.displaySize; i++) {
         fill(this.displayBuffer[i]);
@@ -40,7 +45,7 @@ class Display {
 
 
     
-    // Let's empty everything before we start adding things to it again
+    // Let's empty the display before we start adding things to it again
     clear() {
 
         for(let i = 0; i < this.displaySize; i++) {    
