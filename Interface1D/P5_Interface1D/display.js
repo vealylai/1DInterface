@@ -38,6 +38,7 @@ class Display {
     // This is the only function in the entire software that writes something directly to the screen.
     show() {
       for (let i =0; i< this.displaySize; i++) {
+        //noStroke();
         fill(this.displayBuffer[i]);
         rect(i*this.pixelSize,0,this.pixelSize,this.pixelSize);
       }
