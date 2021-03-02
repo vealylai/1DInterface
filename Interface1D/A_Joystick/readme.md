@@ -10,7 +10,7 @@ We are using Arduino Leonardo. Plug your Arduino into your computer and you shou
 
 Now let's make sure you can program your board.
 
-Firs you need tell the Arduino IDE what port your board is connected to and make sure you've selected the right board.
+First you need tell the Arduino IDE what port your board is connected to and make sure you've selected the right board.
 
 Go to **Tools > Boards** and select **Arduino Leonardo**.
 
@@ -20,7 +20,7 @@ Go to **Tools > Port** and then **/dev/cu.usbmodemHIDPC1 (Arduino Leonardo)**. <
 
 Then run a simple example to make sure your Arduino programs correctly.
 
-Go to File > Examples > 01.Basics > Blink. This will open a sketch that makes the LED blink.
+Go to **File > Examples > 01.Basics > Blink**. This will open a sketch that makes the LED blink.
 
 Click the Upload arrow. And you should get a **Done Uploading** message.
 
@@ -32,6 +32,14 @@ delay(100); // wait for a second
 digitalWrite(LED_BUILTIN, LOW); // turn the LED off by making the voltage LOW
 delay(100); // wait for a second
 ```
+
+## 2.5 Reset
+
+Because the keyboard functionality uses the serial port, which is also how we program the Arduino, you might get into a situation where the serial port is outputting numbers and doesn't let you reprogram the Arduino.
+
+If this happens, connect a wire from the **RST (reset)** pin to ground. Then start upload and disconnect the reset wire. You might need to do this a few times to get the timing right.
+
+**The Short Story: when using a Leonardo, only have it output serial commands once the user does something like press a button. If you have it output all the time by default, you will get into this situation.**
 
 ## 3. Add a Button
 
