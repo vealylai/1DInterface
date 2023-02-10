@@ -1,7 +1,7 @@
 /* /////////////////////////////////////
 
-  4.043 / 4.044 Design Studio: Advanced Interactions
-  February  18, 2021
+  4.043 / 4.044 Design Studio: Interaction Intelligence
+  February  9, 2023
   Marcelo Coelho
 
   If you come from Processing, there is a Processing version here. 
@@ -20,7 +20,7 @@ let target;       // and one target for players to catch.
 
 let display;      // Aggregates our final visual output before showing it on the screen
 
-let controller;   // This is where the state machine and software logic lives
+let controller;   // This is where the state machine and game logic lives
 
 let collisionAnimation;   // Where we store and manage the collision animation
 

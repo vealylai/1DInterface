@@ -28,7 +28,7 @@ A state machine helps users create a clear mental model of what your software is
 1. Download and install Visual Studio Code and install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
 2. Install Chrome
 3. Download this game.
-4. Run it by the entire folder in Visual Studio Code and clicking on the 'Go Live' button at the bottom right of the screen.
+4. Run it by dragging/dropping the entire folder in Visual Studio Code and clicking on the 'Go Live' button at the bottom right of the screen.
 5. Instructions for playing the game:
    - Keyboard keys **A** and **D** move Red Player left and right.
    - Keys **J** and **L** move Blue Player.
@@ -38,7 +38,7 @@ A state machine helps users create a clear mental model of what your software is
 
 # Interface Architecture
 
-1D Interface separates:
+The 1D Interface app separates:
 
 1. The interface structure (state machine, event listener, etc) from...
 2. The game structure (playing, score keeping, etc) from...
@@ -89,7 +89,7 @@ function keyPressed() {
 
 ## Output
 
-Performed by display.js
+Visual output is handled by display.js
 
 Frames are created, manipulated and stored in the array:
 
@@ -97,7 +97,7 @@ Frames are created, manipulated and stored in the array:
 this.displayBuffer = [];
 ```
 
-And this method is the only piece of code that writes to the screen:
+And show() is the only piece of code that writes to the screen:
 
 ```javascript
 show() {
@@ -134,7 +134,7 @@ The state machine for the 1D Interface looks like this:
                    └───────────────┘
 ```
 
-It uses a switch statement to separate and transition between each individual state. The switch statement is called with every single frame by the main **draw()** function in sketch.js.
+It uses a switch statement to separate and transition between each individual state. The switch statement is called at every single frame by the main **draw()** function in sketch.js.
 
 ```javascript
 function draw() {
@@ -142,7 +142,7 @@ function draw() {
 
   controller.update(); // <-- this calls the state machine
 
-  display.show(); // <-- this shows the result of state machine on screen
+  display.show(); // <-- this shows the current state of state machine on screen
 }
 ```
 
@@ -178,9 +178,9 @@ controller.gameState = "PLAY";
 
 ## Animations
 
-The collision animation is create inside of the constructor function in the Animation class inside of animation.js
+The collision animation is created in animation.js, by the Animation class, and inside its constructor function.
 
-And is played by these two pieces of code:
+The animation playback is triggered by this piece of code:
 
 ```javascript
 // clear screen so we start fresh

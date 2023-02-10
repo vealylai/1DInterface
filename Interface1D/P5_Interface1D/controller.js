@@ -10,7 +10,7 @@ class Controller {
        
     }
     
-    // 
+    // This is called from draw() in sketch.js with every frame
     update() {
 
         // STATE MACHINE ////////////////////////////////////////////////
@@ -108,7 +108,6 @@ class Controller {
 
 
 
-// test
 
 // This function gets called when a key on the keyboard is pressed
 function keyPressed() {
