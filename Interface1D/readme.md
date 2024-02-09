@@ -213,13 +213,14 @@ currentFrame() {
 }
 ```
 
-# For Next Class...
+# What you should do next...
 
-You should spend some time trying a few things:
+1. If you are not familiar with p5js, watch the [Coding Train](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA) playlist. 
+2. Read through the code so you can understand it. 
+3. Try to make some modifications, for example:
+  * Change the color of a player
+  * Make the display longer
+  * Add more players or more targets
+  * Add a new state to the game
 
-1. Change the color of a player
-2. Make the display longer
-3. Add more players or more targets
-4. Add a new state to the game
-
-Now try creating your own game and behaviors...
+4. Now try creating your own game and behaviors...
