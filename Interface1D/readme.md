@@ -4,11 +4,26 @@ A 1D Interface is a graphical user interface made from a single row of pixels an
 
 Its simplicity provides a great platform for learning some of the fundamental ideas behind interface design.
 
+# Instructions
+
+1. Download and install Visual Studio Code and install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
+2. Install Chrome
+3. Download this game.
+4. Run it by dragging/dropping the entire folder in Visual Studio Code and clicking on the 'Go Live' button at the bottom right of the screen.
+5. Instructions for playing the game:
+   - Keyboard keys **A** and **D** move Red Player left and right.
+   - Keys **J** and **L** move Blue Player.
+   - First player to catch the Yellow Target 3 times wins.
+   - Winning color takes over the screen.
+   - Press **R** for re-starting the game.
+
+
+
 # Concepts
 
 ### Feedback
 
-Similar to objects in the physical world, every user action causes a corresponding reaction from the interface (e.g. a user presses a button and a character moves). A lack of response leads to confusing and the impression that something on the interface is broken.
+Similar to objects in the physical world, every user action causes a corresponding reaction from the interface (e.g. a user presses a button and a character moves). A lack of response leads to confusion and the impression that something on the interface is broken.
 
 ### Spatial Mapping
 
@@ -23,18 +38,6 @@ For example, when the red player wins, the screen is filled with the color red.
 
 A state machine helps users create a clear mental model of what your software is doing at different points in time. It also helps during design, coding and, in the future, extending your code.
 
-# Instructions
-
-1. Download and install Visual Studio Code and install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
-2. Install Chrome
-3. Download this game.
-4. Run it by dragging/dropping the entire folder in Visual Studio Code and clicking on the 'Go Live' button at the bottom right of the screen.
-5. Instructions for playing the game:
-   - Keyboard keys **A** and **D** move Red Player left and right.
-   - Keys **J** and **L** move Blue Player.
-   - First player to catch the Yellow Target 3 times wins.
-   - Winning color takes over the screen.
-   - Press **R** for re-starting the game.
 
 # Interface Architecture
 
