@@ -35,7 +35,7 @@ class Display {
 
 
     // Now write it to screen
-    // This is the only function in the entire software that writes something directly to the screen.
+    // This is the only function in the entire software that writes something directly to the screen. I recommend you keep it this way.
     show() {
       for (let i =0; i< this.displaySize; i++) {
         //noStroke();

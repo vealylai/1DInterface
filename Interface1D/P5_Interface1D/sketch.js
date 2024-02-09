@@ -1,18 +1,14 @@
 /* /////////////////////////////////////
 
   4.043 / 4.044 Design Studio: Interaction Intelligence
-  February  9, 2023
+  February 9, 2024
   Marcelo Coelho
-
-  If you come from Processing, there is a Processing version here. 
-  Keep in mind that there are some differences between both versions:
-  https://github.com/marcelocoelho/Interface1D
 
 */ /////////////////////////////////////
 
 
 let displaySize = 30;   // how many pixels are visible in the game
-let pixelSize = 20;     // how big should they look on screen
+let pixelSize = 20;     // how big each 'pixel' looks on screen
 
 let playerOne;    // Adding 2 players to the game
 let playerTwo;
