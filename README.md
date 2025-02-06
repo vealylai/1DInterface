@@ -16,7 +16,7 @@ Its simplicity provides a great platform for learning some of the fundamental id
 2. Download the Github desktop app: https://desktop.github.com/download/
 3. Fork this repo
 
-# Instruction Coding
+# Instructions Coding
 
 1. Download and install Visual Studio Code and install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
 2. Install Chrome
