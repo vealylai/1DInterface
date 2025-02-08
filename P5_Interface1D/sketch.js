@@ -33,7 +33,7 @@ function setup() {
   playerOne = new Player(color(255,0,0), parseInt(random(0,displaySize)), displaySize);   // Initializing players
   playerTwo = new Player(color(0,0,255), parseInt(random(0,displaySize)), displaySize);
 
-  target = new Player(color(255,255,0), parseInt(random(0,displaySize)), displaySize);    // Initializing target using the Player class 
+  target = new Player(color(0,255,0), parseInt(random(0,displaySize)), displaySize);    // Initializing target using the Player class 
 
   collisionAnimation = new Animation();     // Initializing animation
 
@@ -44,7 +44,9 @@ function setup() {
 }
 
 function draw() {
-
+  colorMode(HSB);
+  target.playerColor=color(millis()/10%255, 255, 255);
+  colorMode(RGB);
   // start with a blank screen
   background(0, 0, 0);    
 
